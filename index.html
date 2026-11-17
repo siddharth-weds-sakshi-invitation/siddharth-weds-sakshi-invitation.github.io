@@ -222,21 +222,6 @@ button{font-family:inherit}
 .dir:hover{color:var(--brown)}
 
 /* =========================================================
-   GALLERY
-   ========================================================= */
-.gallery{columns:3;column-gap:16px}
-.gallery figure{break-inside:avoid;margin-bottom:16px;border-radius:3px;overflow:hidden;box-shadow:0 6px 16px rgba(62,43,31,.12);cursor:zoom-in;position:relative}
-.gallery figure .ph{transition:transform .8s ease}
-.gallery figure:hover .ph{transform:scale(1.06)}
-@media(max-width:520px){.gallery{columns:2;column-gap:10px}.gallery figure{margin-bottom:10px}}
-#lb{position:fixed;inset:0;z-index:90;background:rgba(30,20,12,.92);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .35s}
-#lb.show{opacity:1;pointer-events:auto}
-#lb .frame{width:min(520px,88vw);aspect-ratio:4/5;transform:scale(.92);transition:transform .35s}
-#lb.show .frame{transform:none}
-#lb button{position:absolute;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.4);background:none;color:#fff;font-size:20px;cursor:pointer}
-#lb .x{top:18px;right:18px} #lb .p{left:12px;top:50%} #lb .nx{right:12px;top:50%}
-
-/* =========================================================
    VENUE / STAY / HASHTAG
    ========================================================= */
 .venue{padding:48px 24px;text-align:center}
@@ -498,15 +483,6 @@ footer .fn{font-family:var(--script);font-size:46px;color:var(--brown);margin-to
   </section>
   </div></div>
 
-  <!-- ============ GALLERY ============ -->
-  <div class="band band-blush"><div class="col">
-  <section class="block">
-    <div class="eyebrow r">Memories</div>
-    <h2 class="h2 r blur">Our Gallery</h2><div class="sprig r"></div>
-    <div class="gallery" id="gallery"></div>
-  </section>
-  </div></div>
-
   <!-- ============ VENUE ============ -->
   <div class="band band-forest"><i class="branch tl light"></i><i class="branch tr light"></i><i class="branch bl light"></i><i class="branch br light"></i>
   <div class="col">
@@ -544,7 +520,6 @@ footer .fn{font-family:var(--script);font-size:46px;color:var(--brown);margin-to
 </main>
 <div id="ytBox" aria-hidden="true"><div id="ytPlayer"></div></div>
 
-<div id="lb"><button class="x" aria-label="Close">✕</button><button class="p" aria-label="Previous">‹</button><div class="frame" id="lbF"></div><button class="nx" aria-label="Next">›</button></div>
 
 <div class="float" id="float">
   <button id="mbtn" aria-label="Play or pause music"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#b88a63" stroke-width="1.8"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></button>
@@ -591,11 +566,6 @@ const CONFIG = {
       venue:"Botanix Nature Resort", map:"https://share.google/xF4Gp6ct4BeDjjOXd" }
   ],
 
-  gallery: [
-    { src:"", ratio:"4/5" }, { src:"", ratio:"16/11" }, { src:"", ratio:"3/4" },
-    { src:"", ratio:"3/4" }, { src:"", ratio:"1/1" },  { src:"", ratio:"4/5" },
-    { src:"", ratio:"16/11" }
-  ],
 
   venue: { name:"Botanix Nature Resort", address:"Gurugram, Haryana", map:"https://share.google/xF4Gp6ct4BeDjjOXd" }
 };
@@ -670,16 +640,6 @@ $('#timeline').insertAdjacentHTML('beforeend',CONFIG.events.map((e,i)=>`
       <a class="dir" href="${e.map}" target="_blank" rel="noopener">${ic.nav} GET DIRECTIONS</a>
     </div></div>`).join(''));
 
-/* gallery + lightbox */
-$('#gallery').innerHTML=CONFIG.gallery.map((g,i)=>`<figure class="r" data-i="${i}" style="transition-delay:${(i%3)*.12}s"><div class="ph" style="aspect-ratio:${g.ratio}">${img(g.src,'Photo '+(i+1),i)}</div></figure>`).join('');
-let li=0; const lb=$('#lb');
-const openLb=i=>{li=(i+CONFIG.gallery.length)%CONFIG.gallery.length; $('#lbF').innerHTML=img(CONFIG.gallery[li].src,'Photo '+(li+1),li); lb.classList.add('show');};
-$('#gallery').onclick=e=>{const f=e.target.closest('figure'); if(f) openLb(+f.dataset.i);};
-lb.querySelector('.x').onclick=()=>lb.classList.remove('show');
-lb.querySelector('.p').onclick=()=>openLb(li-1);
-lb.querySelector('.nx').onclick=()=>openLb(li+1);
-lb.onclick=e=>{if(e.target===lb) lb.classList.remove('show');};
-addEventListener('keydown',e=>{if(!lb.classList.contains('show'))return; if(e.key==='Escape')lb.classList.remove('show'); if(e.key==='ArrowLeft')openLb(li-1); if(e.key==='ArrowRight')openLb(li+1);});
 
 /* venue, stay */
 $('#venueLink').href=CONFIG.venue.map;
