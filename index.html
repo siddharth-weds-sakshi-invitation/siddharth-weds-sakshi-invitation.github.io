@@ -6,7 +6,7 @@
 <title>Siddharth &amp; Sakshi — Wedding Invitation</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <style>
 :root{
   --cream:#f6efe4; --cream-2:#efe4d3; --card:#fbf8f2; --sand:#e8dccb; --line:#dccab0;
@@ -58,7 +58,7 @@ button{font-family:inherit}
 .letter{position:absolute;left:6%;right:6%;top:6%;height:88%;background:linear-gradient(180deg,#fdfaf4,#f4ecdf);border-radius:3px;box-shadow:0 4px 14px rgba(0,0,0,.08);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:16px;transition:transform 1.4s cubic-bezier(.6,0,.25,1) .7s,height 1.4s cubic-bezier(.6,0,.25,1) .7s;z-index:2}
 #intro.opened .letter{transform:translateY(-78%);height:150%}
 .letter .eyebrow{font-size:9px;letter-spacing:.32em;color:var(--brown-2)}
-.letter .nm{font-family:var(--script);font-size:clamp(30px,8vw,42px);color:var(--brown);margin:6px 0}
+.letter .nm{font-family:var(--serif);font-weight:600;font-size:clamp(24px,6.4vw,32px);color:var(--brown);margin:6px 0}
 .letter .nm i{font-family:var(--italic);font-size:.5em;color:var(--accent);font-style:italic;margin:0 6px}
 .letter .sd{font-family:var(--italic);font-style:italic;font-size:20px;color:var(--brown-2);margin-top:10px}
 .letter .small{font-size:9px;letter-spacing:.3em;color:var(--muted);margin-top:6px;text-transform:uppercase}
@@ -103,7 +103,7 @@ button{font-family:inherit}
 .hero-icon{width:78px;height:auto;display:block;margin:0 auto 12px;opacity:0;animation:up 1s ease .2s forwards}
 .blessing{font-family:var(--italic);font-style:italic;font-size:14px;color:var(--muted);opacity:0;animation:up 1s ease .4s forwards}
 .hero-top .eyebrow{margin-top:14px;font-size:10px;opacity:0;animation:up 1s ease .6s forwards}
-.script-name{font-family:var(--script);font-size:clamp(64px,15vw,92px);line-height:1;color:var(--brown);display:inline-block;padding:0 .2em;
+.script-name{font-family:var(--serif);font-weight:600;letter-spacing:.01em;font-size:clamp(52px,13vw,78px);line-height:1.08;color:var(--brown);display:inline-block;padding:0 .2em;
   clip-path:inset(0 100% 0 0);animation:write 2s cubic-bezier(.6,0,.3,1) forwards}
 .script-name.n1{animation-delay:.9s;margin-top:14px}
 .script-name.n2{animation-delay:2.4s}
@@ -133,7 +133,7 @@ button{font-family:inherit}
 .person{text-align:center;padding:0 10px}
 .arch{width:142px;height:186px;margin:0 auto 22px;padding:6px;border-radius:72px 72px 4px 4px;background:#fff;border:1px solid var(--line);box-shadow:0 10px 24px rgba(62,43,31,.08)}
 .arch .ph{width:100%;height:100%;border-radius:66px 66px 2px 2px;overflow:hidden;border:2px solid var(--accent-2)}
-.person h3{font-family:var(--serif);font-weight:400;font-size:24px}
+.person h3{font-family:var(--serif);font-weight:600;font-size:25px}
 .person .role{font-size:10px;font-weight:600;letter-spacing:.3em;color:var(--accent);margin:4px 0 14px}
 .person p{font-size:12px;color:var(--muted);line-height:1.5}
 .couple .heart{position:absolute;left:50%;top:132px;transform:translate(-50%,-50%);width:40px;height:40px;border-radius:50%;background:var(--sand);display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 5px var(--card);animation:beat 1.6s ease-in-out infinite}
@@ -143,9 +143,9 @@ button{font-family:inherit}
 /* =========================================================
    QUOTE PHOTO
    ========================================================= */
-.quote{aspect-ratio:1/1.1;border-radius:22px;overflow:hidden;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding:40px 24px;text-align:center;color:#fff}
+.quote{aspect-ratio:1/1.2;border-radius:22px;overflow:hidden;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding:40px 24px;text-align:center;color:#fff}
 .quote .ph{position:absolute;inset:0}
-.quote::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(40,25,15,.25),rgba(40,25,15,.55) 70%,rgba(40,25,15,.7))}
+.quote::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(40,25,15,0) 45%,rgba(40,25,15,.55) 75%,rgba(40,25,15,.78))}
 .quote > *:not(.ph){position:relative;z-index:2}
 .quote .q{font-family:var(--script);font-size:clamp(30px,7vw,44px);line-height:1.35}
 .quote .q span{display:inline-block;opacity:0;transform:translateY(14px);filter:blur(6px);transition:all .7s ease}
@@ -187,10 +187,10 @@ button{font-family:inherit}
 /* =========================================================
    STORY
    ========================================================= */
-.story{aspect-ratio:1/1.05;border-radius:22px;overflow:hidden;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 30px;color:#fff}
+.story{aspect-ratio:1/1.25;border-radius:22px;overflow:hidden;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;text-align:center;padding:40px 30px;color:#fff}
 .story .ph{position:absolute;inset:0;transform:scale(1.08);transition:transform 6s ease}
 .story.in .ph{transform:scale(1)}
-.story::after{content:"";position:absolute;inset:0;background:rgba(55,35,20,.58)}
+.story::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,18,40,0) 42%,rgba(20,18,40,.7) 66%,rgba(20,18,40,.9))}
 .story > *:not(.ph){position:relative;z-index:2}
 .story .eyebrow{color:rgba(255,255,255,.75)}
 .story p{font-family:var(--italic);font-style:italic;font-size:clamp(20px,4.6vw,25px);line-height:1.55;margin-top:20px;max-width:440px}
@@ -280,7 +280,7 @@ button{font-family:inherit}
 .done a{display:inline-block;text-decoration:none;padding:14px 26px;background:var(--accent);color:#fff;font-size:11px;letter-spacing:.2em;font-weight:600}
 footer{text-align:center;padding:30px 0 120px}
 footer p{font-family:var(--italic);font-style:italic;font-size:20px;color:var(--brown-2)}
-footer .fn{font-family:var(--script);font-size:46px;color:var(--brown);margin-top:8px}
+footer .fn{font-family:var(--serif);font-weight:600;font-size:38px;color:var(--brown);margin-top:8px}
 
 /* =========================================================
    FLOATING BUTTONS
@@ -320,6 +320,7 @@ footer .fn{font-family:var(--script);font-size:46px;color:var(--brown);margin-to
 .band-footer footer{padding:0}
 .band-footer footer p{color:#e2d3b5}
 .band-footer .fn{color:#f6ead2}
+.credit{font-size:9px;letter-spacing:.12em;color:#8fa89a;margin-top:26px;opacity:.7}
 .fdate{font-size:11px;letter-spacing:.35em;color:#c9a77d;margin-top:10px;text-transform:uppercase}
 .band-forest .venue,.band-emerald .scratch{position:relative}
 /* section-title sprig with the couple's initials */
@@ -332,7 +333,7 @@ footer .fn{font-family:var(--script);font-size:46px;color:var(--brown);margin-to
 .couple .heart.crest-mini{width:58px;height:58px;background:var(--card);box-shadow:0 0 0 5px var(--card)}
 .crest-mini svg,.crest-big svg,.crest-foot svg,.crest-q svg{width:100%;height:100%}
 .watermark{position:absolute;left:50%;top:50%;width:min(520px,110vw);height:min(520px,110vw);transform:translate(-50%,-50%);opacity:.12;z-index:1;animation:spin 140s linear infinite}
-.story-sign{font-family:var(--script);font-size:30px;margin-top:16px;color:#f3e2c8}
+.story-sign{font-family:var(--serif);font-weight:600;font-size:24px;margin-top:16px;color:#f3e2c8}
 /* leafy corner branches */
 .branch{position:absolute;width:min(230px,46vw);height:min(230px,46vw);z-index:1;pointer-events:none;background-repeat:no-repeat;background-size:contain;opacity:.9;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cg fill='%237f9a72' fill-opacity='.55' stroke='%235d7a5f' stroke-width='1' stroke-opacity='.5'%3E%3Cpath d='M4 4Q70 40 120 120T196 196' fill='none'/%3E%3Cpath d='M34 22q-4-22 12-30 6 18-12 30z'/%3E%3Cpath d='M30 26q-22-2-28 14 18 4 28-14z'/%3E%3Cpath d='M66 44q0-24 18-30 4 20-18 30z'/%3E%3Cpath d='M60 50q-24 0-32 16 22 4 32-16z'/%3E%3Cpath d='M98 78q4-24 22-28 0 20-22 28z'/%3E%3Cpath d='M92 86q-24 2-30 20 22 2 30-20z'/%3E%3Cpath d='M124 116q6-22 24-24-2 20-24 24z'/%3E%3Cpath d='M118 124q-22 4-26 22 20 0 26-22z'/%3E%3C/g%3E%3Cg fill='%23e8b4a8'%3E%3Ccircle cx='48' cy='12' r='5'/%3E%3Ccircle cx='86' cy='16' r='4'/%3E%3Ccircle cx='122' cy='52' r='4'/%3E%3C/g%3E%3C/svg%3E");
@@ -355,6 +356,38 @@ footer .fn{font-family:var(--script);font-size:46px;color:var(--brown);margin-to
 #dust{z-index:3}
 #ytBox{position:fixed;left:0;bottom:0;width:200px;height:200px;opacity:0;pointer-events:none;z-index:-5;overflow:hidden}
 #ytBox iframe{width:100%;height:100%}
+
+/* =========================================================
+   ILLUSTRATED CHARACTERS — animation
+   ========================================================= */
+.ch-svg{width:100%;height:100%;display:block}
+.cp-couple{transform-box:fill-box;transform-origin:50% 100%;animation:cpBreathe 5.5s ease-in-out infinite}
+@keyframes cpBreathe{0%,100%{transform:scale(1) rotate(0)}50%{transform:scale(1.012) rotate(.35deg)}}
+
+.ch-sway{transform-box:fill-box;transform-origin:50% 100%;animation:chSway 5s ease-in-out infinite}
+@keyframes chSway{0%,100%{transform:rotate(-1.1deg)}50%{transform:rotate(1.1deg)}}
+.ch-blink{transform-box:fill-box;transform-origin:50% 50%;animation:chBlink 4.6s infinite}
+@keyframes chBlink{0%,93%,100%{transform:scaleY(1)}96%{transform:scaleY(.1)}}
+.ch-jhumka{transform-box:fill-box;transform-origin:50% 0;animation:chJh 2.2s ease-in-out infinite}
+@keyframes chJh{0%,100%{transform:rotate(-9deg)}50%{transform:rotate(9deg)}}
+.ch-veil{transform-box:fill-box;transform-origin:50% 0;animation:chVeil 6s ease-in-out infinite}
+@keyframes chVeil{0%,100%{transform:skewX(-1.2deg)}50%{transform:skewX(1.2deg)}}
+.ch-feather{transform-box:fill-box;transform-origin:20% 100%;animation:chFe 3s ease-in-out infinite}
+@keyframes chFe{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(6deg)}}
+.ch-string{transform-box:fill-box;transform-origin:50% 0;animation:chStr 4s ease-in-out infinite}
+@keyframes chStr{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(2deg)}}
+.ch-tw{animation:chTw 1.8s ease-in-out infinite alternate}
+@keyframes chTw{from{opacity:.25}to{opacity:1}}
+
+/* picture on top, caption panel underneath (so faces are never covered) */
+.quote,.story{aspect-ratio:auto!important;display:flex;flex-direction:column;align-items:center;justify-content:flex-start!important;padding:0 26px 38px!important;text-align:center}
+.quote::after,.story::after{display:none!important}
+.quote .ph,.story .ph{position:relative!important;inset:auto!important;width:calc(100% + 52px);aspect-ratio:1/.95;flex:none;transform:none!important}
+.quote{background:linear-gradient(180deg,#7a4a12,#5a340c)}
+.story{background:linear-gradient(180deg,#2a2150,#1a1534)}
+.quote .crest-q{margin-top:-32px;background:#7a4a12;border-radius:50%;padding:4px;width:66px;height:66px}
+.quote .q{margin-top:10px}
+.story .eyebrow{margin-top:26px}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 </style>
 </head>
@@ -529,6 +562,277 @@ footer .fn{font-family:var(--script);font-size:46px;color:var(--brown);margin-to
 
 <script>
 /* =========================================================
+   SIDDHARTH & SAKSHI — illustrated likeness (from their photos)
+   Front-facing, soft flat shading, a new outfit in every section.
+   ========================================================= */
+const CH = (() => {
+  const SKG = '#c98e68', SKG_S = '#ad7552', SKG_H = '#d9a27e';
+  const SKB = '#e7b593', SKB_S = '#cf9876', SKB_H = '#f3c9aa';
+  const HG = '#1f1612', HG_H = '#3a2a22', HB = '#24160f', HB_H = '#4a2e22', LASH = '#1e130d';
+
+  /* ---------- eyes ---------- */
+  function eye(cx, cy, w, lashes) {
+    return `<g class="ch-blink"><path d="M${cx - w} ${cy} Q${cx} ${cy - w * .62} ${cx + w} ${cy} Q${cx} ${cy + w * .42} ${cx - w} ${cy}Z" fill="#fbf6f1"/>
+      <circle cx="${cx}" cy="${cy + .2}" r="${w * .46}" fill="#3b2316"/><circle cx="${cx}" cy="${cy + .2}" r="${w * .22}" fill="#0f0805"/><circle cx="${cx + w * .18}" cy="${cy - w * .14}" r="${w * .12}" fill="#fff"/></g>
+      <path d="M${cx - w} ${cy} Q${cx} ${cy - w * .66} ${cx + w} ${cy}" stroke="${LASH}" stroke-width="${lashes ? 1.9 : 1.4}" fill="none" stroke-linecap="round"/>
+      ${lashes ? `<path d="M${cx + w * (cx > 121 ? 1 : -1)} ${cy} l${cx > 121 ? 2.4 : -2.4} -1.4" stroke="${LASH}" stroke-width="1.3" stroke-linecap="round"/>` : ''}`;
+  }
+
+  /* ---------- groom head (beard, glasses, swept hair) ---------- */
+  function groomHead(o = {}) {
+    let s = '';
+    s += `<ellipse cx="121" cy="60" rx="27" ry="25" fill="${HG}"/>`;
+    s += `<ellipse cx="94.5" cy="82" rx="4.8" ry="8.4" fill="${SKG_S}"/><ellipse cx="145.5" cy="82" rx="4.8" ry="8.4" fill="${SKG}"/>`;
+    s += `<path d="M94 72 C94 46 146 46 146 72 C147 92 142 106 132 115 C126 120 114 120 108 115 C98 106 93 92 94 72Z" fill="${SKG}"/>`;
+    s += `<path d="M135 56 C145 66 147 86 141 102 C137 110 131 115 125 117 C134 104 138 84 135 56Z" fill="${SKG_S}" opacity=".6"/>`;
+    // full beard + moustache
+    s += `<path d="M95 80 C95 104 106 121 120 122 C134 121 145 104 145 80 C143 90 139 96 133 99 C127 97 113 97 107 99 C101 96 97 90 95 80Z" fill="${HG}" opacity=".93"/>
+      <path d="M109 98 Q120 93.4 131 98 Q126 101.4 120 100.4 Q114 101.4 109 98Z" fill="${HG}"/>`;
+    // smile
+    s += `<path d="M112 103 Q120 109.4 128 103 Q120 105.2 112 103Z" fill="#f6f0ea"/><path d="M111.6 102.8 Q120 110.2 128.4 102.8" stroke="#6b3a2c" stroke-width="1.1" fill="none" stroke-linecap="round"/>`;
+    // brows
+    s += `<path d="M102 71.4 Q109.5 66.8 117 70 L116.6 72.2 Q109.5 69.6 102.4 73.6Z" fill="${HG}"/><path d="M123 70 Q130.5 66.8 138 71.4 L137.6 73.6 Q130.5 69.6 123.4 72.2Z" fill="${HG}"/>`;
+    // eyes + glasses
+    s += eye(110, 80.6, 5.2, false) + eye(130, 80.6, 5.2, false);
+    s += `<g fill="#ffffff" fill-opacity=".08" stroke="#16110e" stroke-width="1.7"><rect x="101.6" y="74.4" width="16.8" height="12.2" rx="3.6"/><rect x="121.6" y="74.4" width="16.8" height="12.2" rx="3.6"/></g>
+      <path d="M118.4 79 Q120 77.6 121.6 79 M101.6 78 L95.6 76.6 M138.4 78 L144.4 76.6" stroke="#16110e" stroke-width="1.5" fill="none"/>`;
+    // nose
+    s += `<path d="M121.5 82 C121.5 88 124 91.6 125.4 94.2 C123.4 96.2 119.6 96.4 117.6 94.8" stroke="${SKG_S}" stroke-width="1.6" fill="none" stroke-linecap="round"/>`;
+    if (o.haldi) s += `<g fill="#f0c03a" opacity=".85"><ellipse cx="104" cy="92" rx="4" ry="2.4"/><ellipse cx="137" cy="90" rx="3.4" ry="2"/><ellipse cx="121" cy="60" rx="3" ry="1.6"/></g>`;
+    // short swept hair with side part
+    s += `<path d="M93 76 C88 48 103 31 123 31 C144 31 153 46 148 74 C146 62 141 55 134 53 C124 51 109 53 101 58 C97 62 95 68 93 76Z" fill="${HG}"/>
+      <path d="M98 51 C101 35 121 27 139 33 C147 37 151 45 150 55 C143 45 129 41 115 43 C107 45 102 48 98 51Z" fill="${HG_H}"/>
+      <path d="M107 39 Q122 32 138 38 M110 45 Q124 39 141 46" stroke="#5a4236" stroke-width="1.2" fill="none" stroke-linecap="round" opacity=".85"/>
+      <path d="M106 38 C104 44 103 50 103 56" stroke="${HG}" stroke-width="2" fill="none"/>
+      <path d="M93 76 C91 68 92 60 96 54 L99 74Z M148 74 C150 66 150 58 146 52 L143 72Z" fill="${HG}"/>`;
+    return s;
+  }
+  const groomNeck = `<path d="M107 100 L133 100 L136 146 L104 146Z" fill="${SKG}"/><path d="M107 106 C113 120 127 120 133 106 L134 126 C126 133 114 133 106 126Z" fill="${SKG_S}"/>`;
+
+  /* ---------- groom outfits ---------- */
+  function groomBody(k) {
+    const torso = c => `<path d="M104 138 L66 150 C46 158 38 178 36 212 L30 420 L210 420 L204 212 C202 178 194 158 174 150 L136 138Z" fill="${c}"/>`;
+    const arms = sh => `<path d="M36 212 C40 186 50 166 66 156 C58 180 56 220 58 270 L56 420 L30 420Z" fill="${sh}" opacity=".55"/>
+      <path d="M204 212 C200 186 190 166 174 156 C182 180 184 220 182 270 L184 420 L210 420Z" fill="${sh}" opacity=".85"/>`;
+    if (k === 'sherwani') {   // ivory-gold sherwani, maroon stole
+      const c = '#efe3c8', sh = '#d4c09a', g = '#c39a45';
+      let s = torso(c) + arms(sh);
+      s += `<path d="M120 152 L120 420" stroke="${g}" stroke-width="1.6"/><path d="M114 154 L114 420 M126 154 L126 420" stroke="${g}" stroke-width=".8" stroke-dasharray="1.6 2.6"/>`;
+      for (let y = 166; y < 420; y += 18) s += `<circle cx="120" cy="${y}" r="2.6" fill="${g}"/>`;
+      s += `<path d="M105 134 Q120 142 135 134 L136 147 Q120 156 104 147Z" fill="${c}"/><path d="M104 147 Q120 156 136 147" stroke="${g}" stroke-width="1.4" fill="none"/>`;
+      s += `<path d="M156 146 C146 150 138 160 134 174 L92 420 L124 420 L152 196 C156 178 166 162 180 156Z" fill="#8f1d2e"/>
+        <path d="M140 178 L102 420 M150 196 L116 420" stroke="${g}" stroke-width="1.4" fill="none"/>`;
+      s += `<circle cx="80" cy="190" r="5" fill="${g}"/><circle cx="80" cy="190" r="2.4" fill="#2e7d5b"/>`;
+      return s;
+    }
+    if (k === 'suit') {       // navy suit, white shirt, tie
+      const c = '#26365e', sh = '#18233f', lap = '#1e2c4f';
+      let s = torso(c) + arms(sh);
+      s += `<path d="M104 138 L136 138 L134 210 L120 232 L106 210Z" fill="#f6f4ef"/><path d="M120 150 L134 140 L134 210 L120 232Z" fill="#e3e0d8"/>`;
+      s += `<path d="M104 138 L90 152 L100 176 L93 188 L120 250 L110 206Z" fill="${lap}"/><path d="M136 138 L150 152 L140 176 L147 188 L120 250 L130 206Z" fill="${lap}"/>`;
+      s += `<path d="M117 146 L123 146 L125 152 L121 200 L120 206 L119 200 L115 152Z" fill="#7a2a3a"/><path d="M116.5 145 L123.5 145 L122.6 151 L117.4 151Z" fill="#5e1f2c"/>`;
+      s += `<circle cx="120" cy="266" r="2.4" fill="#0b0b0f"/><path d="M146 210 L168 206 L167 212 L145 216Z" fill="${lap}"/><path d="M148 208 l3 -6 l3 5 l3 -6 l3 6" fill="#e7c3b6"/>`;
+      return s;
+    }
+    if (k === 'kurta') {      // haldi yellow kurta + marigold mala
+      const c = '#f0c642', sh = '#d4a628';
+      let s = torso(c) + arms(sh);
+      s += `<path d="M120 148 L120 240" stroke="#f9e9b4" stroke-width="1.6"/>`;
+      for (let y = 160; y < 240; y += 16) s += `<circle cx="120" cy="${y}" r="2" fill="#f9e9b4"/>`;
+      s += `<path d="M106 136 Q120 144 134 136 L134 144 Q120 152 106 144Z" fill="${c}"/>`;
+      for (let i = 0; i <= 20; i++) { const t = i / 20, x = 98 + 44 * t, y = 144 + 76 * 4 * t * (1 - t); s += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="4" fill="${i % 3 ? '#f2992a' : '#e0532c'}"/>`; }
+      return s;
+    }
+    if (k === 'bandhgala') {  // sangeet: black bandhgala, silver buttons
+      const c = '#1d1d24', sh = '#0f0f14', g = '#c9ccd6';
+      let s = torso(c) + arms(sh);
+      s += `<path d="M120 150 L120 420" stroke="${g}" stroke-width="1" opacity=".5"/>`;
+      for (let y = 164; y < 420; y += 20) s += `<circle cx="120" cy="${y}" r="2.6" fill="${g}"/>`;
+      s += `<path d="M105 134 Q120 142 135 134 L136 148 Q120 157 104 148Z" fill="${c}"/><path d="M104 148 Q120 157 136 148" stroke="${g}" stroke-width="1.2" fill="none"/>`;
+      s += `<path d="M150 186 l14 -2 l-1 5 l-14 2z" fill="#9fd6c8"/><circle cx="84" cy="186" r="4" fill="${g}"/>`;
+      return s;
+    }
+    return torso('#999');
+  }
+  function groom(k, o = {}) {
+    const t = `rotate(${o.tilt || 0} 120 140) translate(0 9)`;
+    return `<g class="ch-sway"><g transform="${t}">${groomNeck}</g>${groomBody(k)}<g transform="${t}">${groomHead(o)}</g></g>`;
+  }
+
+  /* ---------- bride (round face, big smile, long wavy hair) ---------- */
+  function brideHairBack(k) {
+    if (k === 'bridal') return `<path d="M90 96 C82 54 102 34 122 34 C144 34 164 54 154 96 C160 124 160 154 154 176 L92 176 C86 154 84 124 90 96Z" fill="#a3172c"/>`;
+    let waves = '';
+    for (let i = 0; i < 7; i++) waves += `${i ? '' : ''}C${84 + i * 12} ${226 + (i % 2) * 8} ${90 + i * 12} ${226 + (i % 2) * 8} ${96 + i * 12} 220 `;
+    return `<path d="M92 90 C84 54 104 38 122 38 C142 38 162 54 154 92 C162 132 166 176 160 220 ${'C152 230 146 226 140 220 C134 230 126 228 120 220 C114 230 106 226 100 220 C94 228 86 226 82 218'} C78 176 82 130 92 90Z" fill="${HB}"/>
+      <path d="M96 122 C94 152 96 184 102 210 M150 122 C154 152 152 184 146 210 M104 112 C100 140 102 168 108 196" stroke="${HB_H}" stroke-width="2" fill="none" stroke-linecap="round" opacity=".8"/>`;
+  }
+  function brideHead(k, o = {}) {
+    const g = '#d8b25c';
+    let s = '';
+    s += `<path d="M95 82 C95 56 147 56 147 82 C148 101 142 115 130 121.5 C125.5 124.8 116.5 124.8 112 121.5 C100 115 94 101 95 82Z" fill="${SKB}"/>`;
+    s += `<path d="M135 66 C145 76 146 96 140 108 C136 115 131 119 126 121 C134 108 138 88 135 66Z" fill="${SKB_S}" opacity=".55"/>`;
+    s += `<ellipse cx="106" cy="100" rx="6.4" ry="3.8" fill="#ec8f88" opacity=".38"/><ellipse cx="136" cy="100" rx="6" ry="3.6" fill="#ec8f88" opacity=".38"/>`;
+    s += `<path d="M103 79 Q110 74.4 117 77.6 L116.8 79 Q110 76.6 103.2 80.4Z" fill="${HB}"/><path d="M125 77.6 Q132 74.4 139 79 L138.8 80.4 Q132 76.6 125.2 79Z" fill="${HB}"/>`;
+    s += eye(111, 87, 5, true) + eye(131, 87, 5, true);
+    s += `<path d="M122 88 C122 94 124 97 125.2 99.4 C123.6 101 120.4 101 119 99.8" stroke="${SKB_S}" stroke-width="1.4" fill="none" stroke-linecap="round"/>`;
+    const lip = o.lip || '#c2474f';
+    s += `<path d="M110.6 105.4 Q121 117 131.4 105.4 Q121 109 110.6 105.4Z" fill="#fbf6f0"/><path d="M110.6 105.4 Q121 117 131.4 105.4" stroke="${lip}" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      <path d="M111 105.2 Q121 107.8 131 105.2" stroke="${lip}" stroke-width="1.3" fill="none" stroke-linecap="round"/>`;
+    if (o.haldi) s += `<g fill="#f0c03a" opacity=".85"><ellipse cx="105" cy="99" rx="4.4" ry="2.6"/><ellipse cx="137" cy="97" rx="3.6" ry="2.2"/></g>`;
+    // front hair: soft centre part, volume
+    s += `<path d="M98 88 C94 60 110 48 121 48 C132 48 148 60 144 88 C142 72 134 61 123 57 L121 55 L119 57 C108 61 100 72 98 88Z" fill="${HB}"/>
+      <path d="M106 60 Q113 54 119 55 M123 55 Q130 54 136 60" stroke="${HB_H}" stroke-width="1.5" fill="none" stroke-linecap="round"/>`;
+    if (k === 'bridal') {
+      s += `<circle cx="121" cy="72.8" r="2" fill="#a8172a"/><path d="M121 55 L121 65" stroke="${g}" stroke-width="1.2"/><path d="M117.4 65 Q121 74 124.6 65Z" fill="${g}"/><circle cx="121" cy="67.6" r="1.4" fill="#a8172a"/>`;
+      s += `<circle cx="126.4" cy="99.6" r="3.4" fill="none" stroke="${g}" stroke-width="1.2"/><path d="M129.4 97.6 Q139 92 145 94" stroke="${g}" stroke-width=".7" fill="none" stroke-dasharray="1 1.4"/>`;
+      s += `<g class="ch-jhumka"><circle cx="97" cy="98" r="1.6" fill="${g}"/><path d="M92.4 108 Q97 97 101.6 108Z" fill="${g}"/><circle cx="97" cy="110" r="1.3" fill="#a8172a"/></g>`;
+      s += `<g class="ch-veil"><path d="M90 98 C80 56 102 32 122 32 C144 32 166 56 154 98 C150 76 140 61 122 57 C104 61 94 76 90 98Z" fill="#b81e34"/>
+        <path d="M93 92 C86 60 104 39 122 38 C142 39 160 60 151 92" stroke="${g}" stroke-width="2" fill="none"/>
+        ${Array.from({ length: 9 }, (_, i) => { const a = Math.PI * (.15 + .7 * i / 8), x = 122 - Math.cos(a) * 32, y = 76 - Math.sin(a) * 34; return `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="1.1" fill="${g}"/>`; }).join('')}</g>`;
+    }
+    if (k === 'haldi') {
+      s += `<circle cx="121" cy="72.8" r="1.7" fill="#d23a4e"/><path d="M121 55 L121 63" stroke="#fff" stroke-width="1.6" stroke-dasharray="2 1.2"/>
+        ${[0, 72, 144, 216, 288].map(a => `<ellipse cx="121" cy="63.6" rx="2.2" ry="3.8" transform="rotate(${a} 121 66.4)" fill="#fff"/>`).join('')}<circle cx="121" cy="66.4" r="1.7" fill="#f2a516"/>`;
+      s += `<g class="ch-jhumka"><circle cx="97" cy="101" r="3" fill="#fff"/><circle cx="97" cy="101" r="1.2" fill="#f2a516"/><circle cx="97" cy="107" r="2" fill="#f6a6c1"/></g>`;
+    }
+    if (k === 'sangeet') {
+      s += `<circle cx="121" cy="72.8" r="1.7" fill="#0e7563"/>`;
+      s += `<g class="ch-jhumka"><circle cx="97" cy="99" r="1.6" fill="${g}"/><path d="M91.6 110 Q97 98 102.4 110Z" fill="${g}"/><g fill="#9fe0cf"><circle cx="93" cy="112" r="1"/><circle cx="97" cy="113" r="1"/><circle cx="101" cy="112" r="1"/></g></g>`;
+    }
+    if (k === 'redset') {     // her signature sunglasses resting on her head + gold studs
+      s += `<g stroke="#c9a25a" stroke-width="1.3"><path d="M100 51 Q110 45 119 48.6 L119 55 Q110 59 101 56Z" fill="#3a2a22"/><path d="M123 48.6 Q132 45 142 51 L141 56 Q132 59 123 55Z" fill="#3a2a22"/></g>
+        <path d="M119 50 Q121 48.4 123 50" stroke="#c9a25a" stroke-width="1.4" fill="none"/>
+        <path d="M104 50.6 Q109 48.4 113 49.4 M127 49.4 Q131 48.4 136 50.6" stroke="#fff" stroke-width="1.1" fill="none" opacity=".55" stroke-linecap="round"/>`;
+      s += `<circle cx="97" cy="100" r="2.2" fill="#d8b25c"/>`;
+    }
+    return s;
+  }
+  function brideBody(k) {
+    const base = `<path d="M108 146 L80 156 C60 164 52 184 50 214 L44 420 L198 420 L192 214 C190 184 182 164 162 156 L134 146Z"`;
+    const arms = sh => `<path d="M50 214 C54 188 64 170 80 162 C74 186 72 226 74 272 L72 420 L44 420Z" fill="${sh}" opacity=".5"/>
+      <path d="M192 214 C188 188 178 170 162 162 C168 186 170 226 168 272 L170 420 L198 420Z" fill="${sh}" opacity=".8"/>`;
+    if (k === 'bridal') {
+      const c = '#a8122b', sh = '#7d0c1f', g = '#d8b25c';
+      let s = base + ` fill="${c}"/>` + arms(sh);
+      s += `<path d="M104 144 L138 144 L144 162 Q121 180 98 162Z" fill="${SKB}"/><path d="M98 162 Q121 180 144 162" stroke="${g}" stroke-width="2.6" fill="none"/>`;
+      for (let i = 0; i < 16; i++) s += `<path d="M${60 + (i * 41) % 120} ${200 + (i * 29) % 200} q3 -5 6 0 q-3 5 -6 0z" fill="${g}" opacity=".85"/>`;
+      s += `<path d="M105 148 Q121 163 137 148" stroke="${g}" stroke-width="4" fill="none" stroke-linecap="round"/>`;
+      for (let i = 0; i < 7; i++) { const t = i / 6; s += `<circle cx="${(105 + 32 * t).toFixed(1)}" cy="${(151 + 28 * t * (1 - t)).toFixed(1)}" r="1.6" fill="#a8172a"/>`; }
+      s += `<path d="M117.6 157 L121 166 L124.4 157Z" fill="${g}"/><circle cx="121" cy="160.4" r="1.6" fill="#2e7d5b"/>`;
+      s += `<g class="ch-veil"><path d="M92 150 C76 180 66 260 60 420 L80 420 C84 280 92 200 104 160Z" fill="#b81e34"/><path d="M152 150 C168 180 178 260 184 420 L164 420 C160 280 152 200 140 160Z" fill="#b81e34"/>
+        <path d="M92 150 C76 180 66 260 60 420 M152 150 C168 180 178 260 184 420" stroke="${g}" stroke-width="2" fill="none"/></g>`;
+      return s;
+    }
+    if (k === 'redset') {     // red sleeveless peplum top with black belt (from her photo)
+      const c = '#d4222f', sh = '#a91722';
+      let s = base + ` fill="${SKB}"/>`;
+      s += `<path d="M84 160 L100 154 L121 196 L142 154 L158 160 C170 168 176 184 178 210 L182 240 L60 240 L64 210 C66 184 72 168 84 160Z" fill="${c}"/>`;
+      s += `<path d="M64 240 L178 240 C186 262 192 290 196 320 L46 320 C50 290 56 262 64 240Z" fill="${c}"/><path d="M60 244 C80 254 100 246 121 252 C142 246 162 254 182 244" stroke="${sh}" stroke-width="2" fill="none"/>`;
+      s += `<path d="M90 172 C88 196 88 220 90 238 M152 172 C154 196 154 220 152 238" stroke="${sh}" stroke-width="1.4" fill="none" opacity=".7"/>`;
+      s += `<rect x="60" y="232" width="122" height="10" rx="2" fill="#141414"/><circle cx="116" cy="237" r="5" fill="none" stroke="#d9c17a" stroke-width="1.8"/><circle cx="126" cy="237" r="5" fill="none" stroke="#d9c17a" stroke-width="1.8"/>`;
+      s += `<path d="M48 214 C52 188 62 172 78 164 C74 190 72 230 74 276 L72 420 L44 420Z" fill="${SKB}"/><path d="M194 214 C190 188 180 172 164 164 C168 190 170 230 168 276 L170 420 L198 420Z" fill="${SKB_S}"/>`;
+      return s;
+    }
+    if (k === 'haldi') {
+      const c = '#eeb02c', sh = '#c98d14';
+      let s = base + ` fill="${c}"/>` + arms(sh);
+      s += `<path d="M106 144 L136 144 L140 158 Q121 170 102 158Z" fill="${SKB}"/>`;
+      for (let i = 0; i < 12; i++) s += `<circle cx="${62 + (i * 43) % 116}" cy="${200 + (i * 31) % 190}" r="2" fill="#fff6dc" opacity=".9"/>`;
+      s += `<g class="ch-veil"><path d="M158 154 C144 158 136 168 132 184 L114 420 L148 420 L156 200 C160 182 166 170 176 164Z" fill="#f59ab0"/>
+        <path d="M136 188 L122 420 M152 200 L140 420" stroke="#fff" stroke-width="1.2" fill="none" stroke-dasharray="3 3"/></g>`;
+      for (let i = 0; i <= 14; i++) { const t = i / 14, x = 102 + 38 * t, y = 150 + 28 * 4 * t * (1 - t) * .5; s += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="2.6" fill="${i % 2 ? '#f6a6c1' : '#fff'}"/>`; }
+      return s;
+    }
+    if (k === 'sangeet') {   // emerald lehenga with sequins + mint dupatta
+      const c = '#0e7563', sh = '#095244', g = '#e3d3a0';
+      let s = base + ` fill="${c}"/>` + arms(sh);
+      s += `<path d="M104 144 L138 144 L142 160 Q121 174 100 160Z" fill="${SKB}"/><path d="M100 160 Q121 174 142 160" stroke="${g}" stroke-width="2.2" fill="none"/>`;
+      for (let i = 0; i < 30; i++) s += `<circle class="ch-tw" style="animation-delay:${-(i % 7) * .3}s" cx="${58 + (i * 53) % 124}" cy="${196 + (i * 31) % 200}" r="1.2" fill="#e9f7ef"/>`;
+      s += `<g class="ch-veil"><path d="M86 154 C100 158 108 168 112 184 L130 420 L96 420 L88 200 C84 182 78 170 68 164Z" fill="#7fd1bd" opacity=".9"/>
+        <path d="M108 188 L120 420 M92 200 L104 420" stroke="${g}" stroke-width="1.2" fill="none"/></g>`;
+      s += `<path d="M107 148 Q121 160 135 148" stroke="${g}" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M118 156 L121 163 L124 156Z" fill="${g}"/>`;
+      return s;
+    }
+    return '';
+  }
+  function bride(k, o = {}) {
+    const r = `rotate(${o.tilt == null ? -12 : o.tilt} 121 146) translate(0 7)`;
+    const neck = `<path d="M110 108 L132 108 L134 150 L108 150Z" fill="${SKB}"/><path d="M110 113 C116 124 126 124 132 113 L133 130 C124 136 117 136 109 130Z" fill="${SKB_S}"/>`;
+    // long waves falling over both shoulders, in front (not for the veiled bridal look)
+    const front = k === 'bridal' ? '' : `<path d="M98 88 C88 110 92 128 87 146 C83 162 91 176 87 192 C92 205 101 209 107 204 C100 186 106 170 101 154 C98 138 104 120 103 106Z" fill="${HB}"/>
+      <path d="M144 88 C154 110 150 128 155 146 C159 162 151 176 155 192 C150 205 141 209 135 204 C142 186 136 170 141 154 C144 138 138 120 139 106Z" fill="${HB}"/>
+      <path d="M96 120 C94 146 95 170 98 190 M146 120 C148 146 147 170 144 190" stroke="${HB_H}" stroke-width="1.5" fill="none" opacity=".8"/>`;
+    return `<g class="ch-sway" style="animation-delay:-2.5s"><g transform="${r}">${brideHairBack(k)}${neck}</g>${brideBody(k)}<g transform="${r}">${brideHead(k, o)}${front}</g></g>`;
+  }
+
+  /* ---------- decorations ---------- */
+  function hearts(cx, cy, n, col = '#e8798f') {
+    let s = '';
+    for (let i = 0; i < n; i++) {
+      const x = cx + (i - n / 2) * 15, d = 4 + i * .9, del = -(i * 1.3);
+      s += `<path d="M${x} ${cy}c-2.2-3.8-8-3-8 1.6 0 3.4 4 5.6 8 8.8 4-3.2 8-5.4 8-8.8 0-4.6-5.8-5.4-8-1.6z" fill="${col}" opacity="0">
+        <animateTransform attributeName="transform" type="translate" values="0 0; ${(i % 2 ? 9 : -9)} -55; 0 -110" dur="${d}s" begin="${del}s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;.85;0" dur="${d}s" begin="${del}s" repeatCount="indefinite"/></path>`;
+    }
+    return s;
+  }
+  function petals(w, h, n, cols) {
+    let s = '';
+    for (let i = 0; i < n; i++) {
+      const x = (i * 97) % w, d = 6 + (i % 5), del = -((i * 1.7) % d);
+      s += `<ellipse cx="${x}" cy="-10" rx="4.2" ry="2.4" fill="${cols[i % cols.length]}" opacity=".85">
+        <animateTransform attributeName="transform" type="translate" values="0 0; ${(i % 2 ? 20 : -20)} ${h / 2}; 0 ${h + 20}" dur="${d}s" begin="${del}s" repeatCount="indefinite"/></ellipse>`;
+    }
+    return s;
+  }
+  function lights(w, y, n) {
+    let s = `<path d="M0 ${y} Q${w / 2} ${y + 40} ${w} ${y}" stroke="#5a4a36" stroke-width="1" fill="none"/>`;
+    for (let i = 1; i < n; i++) { const t = i / n, x = w * t, yy = y + 40 * 4 * t * (1 - t) * .5 + 4;
+      s += `<circle cx="${x}" cy="${yy}" r="9" fill="#ffd36b" opacity=".16"/><circle class="ch-tw" style="animation-delay:${-(i % 5) * .4}s" cx="${x}" cy="${yy}" r="3.4" fill="#ffe08a"/>`; }
+    return s;
+  }
+  function strings(w, n, len, r = 5) {
+    let s = '';
+    for (let i = 0; i < n; i++) { const x = (w / (n - 1)) * i; s += `<g class="ch-string" style="animation-delay:${-i * .5}s">`;
+      for (let j = 0; j < len; j++) s += `<circle cx="${x}" cy="${6 + j * r * 2}" r="${r}" fill="${j % 4 === 3 ? '#e0532c' : (j % 2 ? '#f6ae2d' : '#f2992a')}"/>`;
+      s += `</g>`; }
+    return s;
+  }
+  const glow = (cx, cy, r, c) => `<circle cx="${cx}" cy="${cy}" r="${r}" fill="${c}"/>`;
+
+  /* ---------- couple: front-facing, her head leaning toward his shoulder ---------- */
+  function couple(W, gk, bk, s, top, o = {}) {
+    const Gx = W / 2 - 145 * s, Gy = top;
+    const Bx = Gx + 62 * s, By = Gy + 40 * s;
+    return `<g transform="translate(${Gx.toFixed(1)} ${Gy.toFixed(1)}) scale(${s})">${groom(gk, { ...o, tilt: 4 })}</g>
+      <g transform="translate(${Bx.toFixed(1)} ${By.toFixed(1)}) scale(${s})">${bride(bk, o)}</g>`;
+  }
+  const wrap = (vb, inner) => `<svg class="ch-svg" viewBox="${vb}" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">${inner}</svg>`;
+
+  const scenes = {
+    /* WEDDING — ivory sherwani · red bridal lehenga with veil */
+    hero: () => wrap('0 0 400 500', `
+      <defs><linearGradient id="chh" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7e3d3"/><stop offset="1" stop-color="#ecb9a6"/></linearGradient></defs>
+      <rect width="400" height="500" fill="url(#chh)"/>${glow(200, 250, 165, '#fbead0')}
+      ${Array.from({ length: 32 }, (_, i) => { const a = Math.PI * (i / 31), x = 200 - Math.cos(a) * 178, y = 196 - Math.sin(a) * 150; return `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="7" fill="${i % 3 ? '#f2992a' : '#e0532c'}"/>`; }).join('')}
+      ${strings(400, 9, 4)}${couple(400, 'sherwani', 'bridal', 1.2, 64)}
+      ${petals(400, 500, 12, ['#e0532c', '#f2992a', '#f4a3b5', '#fff'])}${hearts(200, 110, 4)}`),
+    /* GROOM — navy suit & tie */
+    groom: () => wrap('0 0 200 262', `<rect width="200" height="262" fill="#d3ddc9"/>${glow(100, 120, 84, '#e6ecdd')}<g transform="translate(-20 20)">${groom('suit')}</g>`),
+    /* BRIDE — her red belted co-ord & sunglasses on her head */
+    bride: () => wrap('0 0 200 262', `<rect width="200" height="262" fill="#f3e0d2"/>${glow(100, 120, 84, '#fbefe6')}<g transform="translate(-21 12)">${bride('redset', { tilt: -4 })}</g>`),
+    /* HALDI — yellow kurta · mustard suit, flower jewellery */
+    quote: () => wrap('0 0 400 380', `<rect width="400" height="380" fill="#f6d264"/>${strings(400, 13, 5)}${glow(200, 200, 140, '#fdf0c8')}
+      ${couple(400, 'kurta', 'haldi', 1.0, 48, { haldi: true })}${petals(400, 380, 12, ['#f2992a', '#fff', '#e0532c'])}${hearts(200, 90, 4, '#fff')}`),
+    /* SANGEET — black bandhgala · emerald lehenga, under fairy lights */
+    story: () => wrap('0 0 400 380', `<rect width="400" height="380" fill="#1f2246"/><rect width="400" height="380" fill="#3a1d55" opacity=".4"/>
+      ${lights(400, 12, 14)}${lights(400, 48, 10)}${glow(200, 210, 140, '#33285a')}${couple(400, 'bandhgala', 'sangeet', 1.0, 54)}${hearts(200, 96, 4, '#f4a3b5')}`)
+  };
+  return { scene: k => (scenes[k] ? scenes[k]() : '') };
+})();
+
+/* =========================================================
    ✏️  EDIT EVERYTHING HERE
    Put your photo & song files in the same folder as this page
    and write their file names below. Leave "" for placeholders.
@@ -546,7 +850,7 @@ const CONFIG = {
 
   song: { file: ["song.mp3","song.mp3.mp3"], youtubeId: "BcSejVIxB0E", title: "♪ Ishq Hai Ye Ishq Hai" },   // plays song.mp3 if it is uploaded next to this page, otherwise the YouTube video
 
-  photos: { hero: "", groom: "", bride: "", quote: "", story: "" },   // e.g. "photos/hero.jpg"
+  photos: { hero: "", groom: "", bride: "", quote: "", story: "" },   // leave "" to show the illustrated couple, or add a real photo e.g. "photos/hero.jpg"
 
   events: [
     { name:"Welcome Lunch & Mehendi Ceremony", icon:"mehendi", date:"December 12, 2026", time:"01:00 PM", timing:"1:00 PM onwards", color:"#7f9a5e",
@@ -617,7 +921,8 @@ const pal=[["#f0c9a8","#b77a5c"],["#d8b9a0","#7d5a45"],["#e7c1b3","#a0675b"],["#
 function img(src,label,i=0){ if(src) return `<img src="${src}" alt="${label}" loading="lazy">`;
   const [a,b]=pal[i%pal.length]; return `<div class="placeholder" style="--c1:${a};--c2:${b}"><b>${ini}</b>${label}</div>`; }
 const phLabels={hero:"Couple photo",groom:"Groom",bride:"Bride",quote:"Couple photo 2",story:"Story photo"};
-$$('[data-photo]').forEach((el,i)=>el.innerHTML=img(CONFIG.photos[el.dataset.photo],phLabels[el.dataset.photo],i));
+$$('[data-photo]').forEach((el,i)=>{ const k=el.dataset.photo, src=CONFIG.photos[k];
+  el.innerHTML = src ? img(src,phLabels[k],i) : (CH.scene(k) || img('',phLabels[k],i)); });   // illustrated portraits of the couple until a real photo is added
 
 /* quote — word by word */
 $('#quoteText').innerHTML=CONFIG.quote.split(' ').map((w,i)=>`<span style="transition-delay:${.3+i*.12}s">${w}</span>`).join(' ');
